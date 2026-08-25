@@ -31,6 +31,35 @@ body {
             }
         }
     }
+    &.emmet{
+        background: linear-gradient(45deg, black, #7acb16);
+        section {
+            h2.subtitle {
+                color: #7acb16;
+                border-bottom: 2px dotted #7acb16;
+                padding-bottom: 0.4rem;
+                small{
+                    color: white;
+                    font-size: 0.9rem;
+                    font-weight: 400px;
+                }
+            }
+        h3{ 
+            color: #7acb16;
+            margin: 0;
+
+        }
+        p{
+            font-size: 1.2rem;
+        }
+        xmp{
+            background-color: #0009;
+            border-radius: 8px;
+            padding: 0.6rem;
+            margin: 0;
+        }
+    }
+    }
     &.html{
         background: linear-gradient(45deg, black, #e44d26);
         main{
@@ -58,6 +87,9 @@ body {
         }
     }
     main {
+        background:linear-gradient(#0006, #0000);
+        border-radius: 0.4rem;
+        padding: 1rem;
         header.mainmenu {
             &.internal{
                 h1{
@@ -70,7 +102,7 @@ body {
             }
             h1 {
                 font-size: 3.6rem;
-                border-bottom: 2px solid #e61717;
+                border-bottom: 2px solid #2a7014;
                 font-weight: 400;
                 text-align: center;
                 margin: 1rem 0;
@@ -79,7 +111,7 @@ body {
                 height: 280px;
                 width: 280px;
                 display: flex;
-                border: 4px solid #df1717;
+                border: 4px solid #306408;
                 object-fit: cover;
                 margin: 0 auto;
                 border-radius: 50%;
