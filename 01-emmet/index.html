@@ -224,45 +224,35 @@ Agrupa elementos juntos.
     </xmp>
 </section>
 <section>
-    <h2 class="subtitle"> 17-Challenge<br> 
-    <small>Generates Emmet challenges for practice.  </small></h2>
+    <h2 class="subtitle"> 17-challenge<br> 
+    <small></small></h2>
     <h3>example</h3>
-    <p><header id="header">
-    <nav class="navbar navbar-inverse">
-        <div class="container">
-            <div class="classnavbar-header">
-                <button type="button" class="navbar-toggle">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">index.php
-                    <img src="imgs/logo.png" alt="">
-                </a>
-            </div>
-            <div class="collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="active link">
-                        <a href="login.html">Ingresar</a>
-                    </li>
-                    <li>
-                        <a class="link" href="registro.html">Registrarase</a>
-                    </li>
-                    <li>
-                        <a class="link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header></p>
+    <p style="font-size: 0.75rem;">header#site-header>nav.site-menu>div.shell>(div.identity>a.brand[href="index.php"]>img[src="imgs/logo.png" alt=""])+button.menu-control[type="button"]>span.screen-reader{Toggle navigation}+span.bar*3^div.navigation>ul.menu-items>(li.entry>a.link[href="index.html"]{Inicio})+(li.entry.selected>a.link[href="login.html"]{Ingresar})+(li.entry>a.link[href="registro.html"]{Registrarse})+(li.entry>a.link[href="contacto.html"]{Contacto})</p>
     <h3>result</h3>
-    <xmp>
-        
+    <xmp style="font-size: 0.40rem;">
+        <header id="site-header">
+            <nav class="site-menu">
+                <div class="shell">
+                    <div class="identity">
+                        <a href="index.php" class="brand"><img src="imgs/logo.png" alt=""></a>
+                    </div>
+                    <button class="menu-control" type="button">
+                        <span class="screen-reader">Toggle navigation</span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <div class="navigation">
+                        <ul class="menu-items">
+                            <li class="entry"><a href="index.html" class="link">Inicio</a></li>
+                            <li class="entry selected"><a href="login.html" class="link">Ingresar</a></li>
+                            <li class="entry"><a href="registro.html" class="link">Registrarse</a></li>
+                            <li class="entry"><a href="contacto.html" class="link">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
     </xmp>
 </section>
     </main>
