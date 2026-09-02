@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    background: linear-gradient(#ff1313,rgb(48, 34, 34)) rgb(235, 43, 43);
+    background: linear-gradient(#349467,rgb(48, 34, 34)) rgb(190, 241, 238);
     color:rgb(255, 255, 255);
     font-family: Poppins;
     font-weight: 400;
@@ -14,7 +14,7 @@ body {
         top: 1rem;
         left: 1rem;
         a:link, a:visited{
-            background-color: rgba(0, 0, 0, 0.2);
+            background-color: #fff3;
             border: 2px solid white;
             border-radius: 50%;
             height: 34px;
@@ -31,34 +31,24 @@ body {
             }
         }
     }
+    &.css{
+        background: linear-gradient(45deg, black, #663399);
+        background-attachment: fixed;
+ }
     &.emmet{
         background: linear-gradient(45deg, black, #7acb16);
-        section {
-            h2.subtitle {
+        section{
+            h2.subtitle{
                 color: #7acb16;
                 border-bottom: 2px dotted #7acb16;
                 padding-bottom: 0.4rem;
                 small{
-                    color: white;
+                    color: #fff;
                     font-size: 0.9rem;
-                    font-weight: 400px;
+                    font-weight: 400;
                 }
             }
-        h3{ 
-            color: #7acb16;
-            margin: 0;
-
         }
-        p{
-            font-size: 1.2rem;
-        }
-        xmp{
-            background-color: #0009;
-            border-radius: 8px;
-            padding: 0.6rem;
-            margin: 0;
-        }
-    }
     }
     &.html{
         background: linear-gradient(45deg, black, #e44d26);
@@ -87,7 +77,7 @@ body {
         }
     }
     main {
-        background:linear-gradient(#0006, #0000);
+        background-color: rgba(9, 9, 9, 0.297);
         border-radius: 0.4rem;
         padding: 1rem;
         header.mainmenu {
@@ -102,7 +92,7 @@ body {
             }
             h1 {
                 font-size: 3.6rem;
-                border-bottom: 2px solid #2a7014;
+                border-bottom: 2px solid #0c3817;
                 font-weight: 400;
                 text-align: center;
                 margin: 1rem 0;
@@ -111,7 +101,7 @@ body {
                 height: 280px;
                 width: 280px;
                 display: flex;
-                border: 4px solid #306408;
+                border: 4px solid #0c3817;
                 object-fit: cover;
                 margin: 0 auto;
                 border-radius: 50%;
@@ -154,11 +144,11 @@ body {
                 text-decoration: none;
                 transition: all 0.4s ease-in;
                 &:hover{
-                    background-color: #e05353;
+                    background-color: #53e09e;
                     transform: scale(1.05);
                 }
                 span{
-                    background-color: #e05353;
+                    background-color: #53e09e;
                     border-radius: 50%;
                     display: flex;
                     font-size: 1.4rem;
@@ -196,12 +186,12 @@ body {
             border-collapse: collapse;
         }
         td{
-            width: 40px;
-            height: 27px;
-            border: 1px solid rgb(221, 226, 220);
+            width: 30px;
+            height: 30px;
+            border: 1px solid white;
         }
         .red{
-            background: rgb(54, 6, 230);
+            background: red;
         }
     }
 }
