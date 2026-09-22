@@ -5,6 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>15-position</title>
     <link rel="stylesheet" href="../src/css/styles.css">
+    <style>
+        section {
+            div {
+                background-color: #7dabd5;
+                border: 2px solid #fff;
+                height: 400px;
+                margin: 1rem auto;
+                position: relative;
+                width: 360px;
+
+                img {
+                    width: 80px;
+                }
+                &.pos01 img {
+                    position: static;
+                }
+                &.pos02 img {
+                    position: relative;
+                    top: 30px;
+                    left: 80px;
+                }
+                &.pos03 img {
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                }
+                &.pos04 {
+                    transform: translate(0);
+                    img {
+                        position: fixed;
+                        bottom: 20px;
+                        left: 20px;
+                    }
+                }
+                &.pos05 img {
+                    position: sticky;
+                    top: 40px;
+                }
+            }
+        }
+    </style>
 </head>
 <body class="css">
     <nav class="back">
@@ -16,17 +57,19 @@
         <header class="mainmenu internal">
             <h1>15-position</h1>
             <img src="../src/imgs/logo-css.png" alt="css">
-            <h3>Description</h3>
-            <ul>
-                <li>Nomral/Static</li>
-                <li>Relative</li>
-                <li>Absolute</li>
-                <li>Fixed</li>
-                <li>Sticky</li>
-            </ul>
+            <h3>Specifies the type of positioning method used for an element.</h3>
         </header>
         <section>
-            <h2 class="subtitle">example:</h2>  
+            <h2 class="subtitle">Normal / Static</h2>
+            <div class="pos01"><img src="../src/imgs/mario.png" alt="mario"></div>
+            <h2 class="subtitle">Relative</h2>
+            <div class="pos02"><img src="../src/imgs/mario.png" alt="mario"></div>
+            <h2 class="subtitle">Absolute</h2>
+            <div class="pos03"><img src="../src/imgs/mario.png" alt="mario"></div>
+            <h2 class="subtitle">Fixed</h2>
+            <div class="pos04"><img src="../src/imgs/mario.png" alt="mario"></div>
+            <h2 class="subtitle">Sticky</h2>
+            <div class="pos05"><img src="../src/imgs/mario.png" alt="mario"></div>
         </section>
     </main>
 </body>
