@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28-challenge-shadow</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <style>
+        figure.frame {
+            background-color: white;
+            height: calc(23* 20px); /*y; 29*/
+            width: calc(23* 20px); /*y; 29*/
+            margin: 2rem auto;
+            zoom: 0.60;
+            transition: all 0.4s ease-in;
+            &:hover {
+                transform: scale (1.4);
+            }
+        }
+        div.square {
+            background: url(../src/imgs/square.png);
+            opacity: 0.4;
+            z-index: 2;
+            margin-top: -20px;
+            height: calc(23 * 20px);
+        }
+        div.ash {
+            background-color: transparent;
+            height: 20px;
+            width: 20px;
+            box-shadow: 20px 0 0 0 black,
+                        40px 0 0 0 black,
+                        60px 0 0 0 black,
+                        80px 0 0 0 black,
+                        100px 0 0 0 black,
+                        120px 0 0 0 black,
+                        140px 0 0 0 black,
+                        160px 0 0 0 black,
+                        180px 0  0 black,
+                        200px 0 0 0 black,
+                        20px 220px 0 0 black,
+                        20px 0 0 0 black,
+                        20px 0 0 0 black,
+                        20px 0 0 0 black,
+                        20px 0 0 0 black,
+                        20px 0 0 0 black,
+                        20px 0 0 0 black,
+                        20px 0 0 0 black,
+                        20px 0 0 0 black,
+                        20px 0 0 0 black,
+                        20px 0 0 0 black,
+                        20px 0 0 0 black,
+                        20px 0 0 0 black;
+}
+        
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#currentColor" viewBox="0 0 256 256"><path d="M112,56V200L40,128Z" opacity="0.2"></path><path d="M216,120H120V56a8,8,0,0,0-13.66-5.66l-72,72a8,8,0,0,0,0,11.32l72,72A8,8,0,0,0,120,200V136h96a8,8,0,0,0,0-16ZM104,180.69,51.31,128,104,75.31Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu internal">
+            <h1>28-challenge-shadow</h1>
+            <img src="../src/imgs/logo-css.png" alt="css">
+            <h3>pixel art ash</h3>
+        </header>
+        <section>
+            <h2 class="subtitle">example:</h2>  
+            <figure class="frame">
+                <div class="ash"></div>
+                <div class="square"></div>
+            </figure>
+        </section>
+    </main>
+</body>
+</html>
