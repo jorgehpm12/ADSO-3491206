@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>38-media-queries</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        * {
+            transition: all 0.4s ease;
+        }
+        body {
+            background-color: #003675;
+            font-family: poppins, sans-serif;
+            color: #fff;
+
+            main {
+                border: 4px solid #fff;
+                padding: 1rem;
+                margin: 2rem auto;
+                width: 1280px;
+
+                figure.logo {
+                    background: url(imgs/pepsi01.png) no-repeat center;
+                    height: 354px;
+                    margin: 0 auto;
+                    width: 919px;
+                }
+                h2 {
+                    display: none;
+                    text-align: center;
+                }
+                p {
+                    line-height: 2rem;
+                    text-align: justify;
+                }
+            }
+        }
+        /* Breakpoint: > 1280px */
+        @media (min-width: 1280px) {
+            body {
+                main {
+                    h2:first-of-type { display: block; }
+                }
+            }
+        }
+        @media (max-width: 1280px) {
+            body {
+                main {
+                    h2:nth-of-type(2) { display: block; }
+                    width: 800px;
+
+                    figure.logo {
+                        background: url(/src/imgs/pepsi02.png) no-repeat center;
+                        height: 370px;
+                        margin: 0 auto;
+                        width: 348px;
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <figure class="logo"></figure>
+        <h2>Breakpoint: > 1280px <br> (resolution: Desktop)</h2>
+        <h2>Breackpoint: < 1280px > 800px <br> (Resolution: tablet)</h2>
+        <h2>Breackpoint: < 800px <br> (Resolution: mobile)</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fuga inventore praesentium ex facere cum vero non molestias doloribus odio accusamus sunt molestiae perferendis ipsa aspernatur, possimus, placeat suscipit iusto quam delectus eaque! Ratione, cupiditate. Voluptatem mollitia sint non ad totam, eaque consectetur esse? Cumque ipsa dolore eum! Fugit molestias quo ad, blanditiis, quia non eveniet cupiditate porro laboriosam enim eius dignissimos quos aut animi nesciunt? Rem magnam reiciendis alias soluta eaque totam autem animi, dolore vitae iusto odit nobis cupiditate aut nihil numquam voluptatum nemo aperiam amet vero harum incidunt reprehenderit. Repellat eaque animi assumenda sit, non, similique iste, qui deserunt aliquam ex aliquid porro quasi minus consequuntur sunt quidem eveniet. Vitae laborum quia quisquam velit et, sequi eaque vel sunt voluptate minima quibusdam dolore voluptas porro eum hic at atque ipsum, autem praesentium? Quia eos saepe, eaque maxime nobis totam rerum in error quibusdam. Doloremque, nostrum quaerat. Voluptatem laboriosam quasi voluptates cumque nihil accusamus delectus rem nulla necessitatibus quo molestiae vero et repudiandae nam est iure ut quos rerum provident fuga enim ad, reprehenderit magni! Temporibus earum aperiam odio voluptate quae soluta eum. Quas animi rerum laborum perferendis excepturi asperiores exercitationem ipsam illum a quam, quisquam neque provident.
+        </p>
+    </main>
+</body>
+</html>
