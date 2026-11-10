@@ -5,6 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>40-steps</title>
     <link rel="stylesheet" href="../src/css/styles.css">
+    <style>
+        :root {
+            --size: 256px;
+        }
+        section {
+            div.bg {
+                background: url(../src/imgs/bg-steps.png)
+                            no-repeat center / cover;
+                border-radius: 12px;
+                corner-shape: squircle;
+                position: relative;
+                height: 540px;
+
+                div.trainer {
+                    background: url(/src/imgs/steps-all.png)
+                                no-repeat;
+                    transform: scale(.8);
+                    position:absolute;
+                    bottom: 0;
+                    left: 4rem;
+                    height: var(--size);
+                    width: var(--size);
+
+                    animation: 0.8s animTrainer steps(4) infinite;
+
+                    &.front { background-position-y: calc(var(--size) * 0) ;}
+                    &.left { background-position-y: calc(var(--size) * 1) ;}
+                    &.right { background-position-y: calc(var(--size) * 2) ;}
+                    &.back { background-position-y: calc(var(--size) * 3) ;}
+
+                }
+            }
+        }
+        @keyframes animTrainer {
+            100% {background-position-x: calc(var(--size) * -4) ;}
+}
+    </style>
 </head>
 <body class="css">
     <nav class="back">
@@ -14,12 +51,15 @@
     </nav>
     <main>
         <header class="mainmenu internal">
-            <h1>40-steps</h1>
+            <h1>00-template</h1>
             <img src="../src/imgs/logo-css.png" alt="css">
             <h3>Description</h3>
         </header>
         <section>
-            <h2 class="subtitle">example:</h2>  
+            <h2 class="subtitle">example:</h2>
+            <div class="bg">
+                <div class="trainer"></div>
+            </div>  
         </section>
     </main>
 </body>
