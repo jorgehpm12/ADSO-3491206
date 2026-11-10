@@ -3,24 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>39-challenge-responsive</title>
-    <link rel="stylesheet" href="../src/css/styles.css">
+    <title>39-challenge</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            transition: all 0.4s ease;
+        }
+        body {
+            background-color: rgb(15, 10, 10);
+            background: url(/src/imgs/597457742e081f8ab4c7198305f779d9.jpg) ;
+            font-family: Poppins, sans-serif;
+            color: #fff;
+
+            main {
+                border: 4px solid #fff;
+                padding: 1rem;
+                margin: 2rem auto;
+                width: 1230px;
+
+                figure.logo {
+                    background: url(/src/imgs/8450644860_bf0d994c6a.jpg) no-repeat center;
+                    height: 300px;
+                    margin: 0 auto;
+                    width: 900px;
+                    animation: 2.5s animLogo infinite ease ;
+                }
+                h2 {
+                    display: none;
+                    text-align: center;
+                }
+                p {
+                    line-height: 2rem;
+                    text-align: justify;
+                }
+                .cuadro {
+                    display: inline-block;
+                    width: 23%;
+                    margin: 0%;
+                    vertical-align: top;
+                    border: 2px solid #fff;
+                    height: 320px;
+                }
+                .cuadro img {
+                    width: 100%;
+                    height: 260px;
+                    object-fit: cover;
+                    display: block;
+                }
+                .cuadro p {
+                    text-align: center;
+                    height: 60px;
+                    line-height: 60px;
+                    margin: 0;
+                }
+                .fila {
+                    margin-top: 30px;
+                    border: 2px solid #fff;
+                    padding: 10px;
+                }
+                .foto {
+                    display: inline-block;
+                    width: 200px;
+                    vertical-align: top;
+                }
+                .foto img { 
+                    width: 100%;
+                    height: 200px;
+                    display: block;
+
+                 }
+                .texto {
+                    display: inline-block;
+                    width: 70%;
+                    vertical-align: top;
+                }
+            }
+        }
+        @keyframes animLogo {
+            0%, 100% { transform: scale(0.8); }
+            50%   {transform: scale(1.2); }
+
+        }
+        
+        @media (min-width: 1280px) {
+            body {
+                main {
+                    h2:first-of-type { display: block; }
+                }
+            }
+        }
+            
+         
+        @media (max-width: 1280px) {
+            body {
+                main {
+                    h2:nth-of-type(2) { display: block; }
+                    width: 750px;
+
+                    figure.logo {
+                        background: url(/src/imgs/8450644860_bf0d994c6a.jpg) no-repeat center;
+                        height: 300px;
+                        margin: 0 auto;
+                        width: 500px;
+                    }
+                    .cuadro { width: 46%; }
+                    .foto { width: 150px; }
+                    .texto { width: 60%; }
+                }
+            }
+        }
+
+         
+        @media (max-width: 800px) {
+            body {
+                main {
+                    h2:last-of-type { display: block; }
+                    h2:nth-of-type(2) { display: none; }
+                    width: 350px;
+
+                    figure.logo {
+                        background: url(/src/imgs/8450644860_bf0d994c6a.jpg) no-repeat center;
+                        height: 180px;
+                        margin: 0 auto;
+                        width: 280px;
+                    }
+                    .cuadro { width: 90%; display: block; margin: 10px auto; }
+                    .foto { display: block; width: 100%; }
+                    .texto { display: block; width: 100%; }
+                }
+            }
+        }
+    </style>
 </head>
-<body class="css">
-    <nav class="back">
-        <a href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#currentColor" viewBox="0 0 256 256"><path d="M112,56V200L40,128Z" opacity="0.2"></path><path d="M216,120H120V56a8,8,0,0,0-13.66-5.66l-72,72a8,8,0,0,0,0,11.32l72,72A8,8,0,0,0,120,200V136h96a8,8,0,0,0,0-16ZM104,180.69,51.31,128,104,75.31Z"></path></svg>
-        </a>
-    </nav>
+<body>
     <main>
-        <header class="mainmenu internal">
-            <h1>39-challenge-responsive</h1>
-            <img src="../src/imgs/logo-css.png" alt="css">
-            <h3>Description</h3>
-        </header>
-        <section>
-            <h2 class="subtitle">example:</h2>  
-        </section>
+        <figure class="logo"></figure>
+     
+
+        <div>
+            <div class="cuadro"><img src="/src/imgs/ninja-gaiden-3-game-cover-altar-of-gaming.webp"><p>LOGO</p></div>
+            <div class="cuadro"><img src="/src/imgs/PS4Wallpapers.com_Download-Ninja-Gaiden-HD-Wallpapers-1056x594.jpg"><p>IZUNA DROP</p></div>
+            <div class="cuadro"><img src="/src/imgs/imagen.jpeg"><p>LIDEL</p></div>
+            <div class="cuadro"><img src="/src/imgs/images (1).jpg"><p>RYO</p></div>
+        </div>
+
+        <div class="fila">
+            <div class="foto"><img src="/src/imgs/images (1).jpg
+            "></div>
+            <div class="texto"><p>Ryu Hayabusa: Es un legendario maestro ninja y líder del Clan Hayabusa, protagonista de Ninja Gaiden. Es un guerrero solitario de agilidad sobrehumana que porta la Espada del Dragón para proteger al mundo de demonios y clanes rivales.</p></div>
+        </div>
+
+        <div class="fila">
+            <div class="foto"><img src="/src/imgs/images.jpg"></div>
+            <div class="texto"><p>• Izuna Drop: Es su técnica de combate más famosa y letal. Consiste en lanzar al enemigo por los aires, sujetarlo al revés en pleno vuelo y descender girando a gran velocidad para estrellar su cabeza violentamente contra el suelo.
+</p></div>
+        </div>
     </main>
 </body>
 </html>
